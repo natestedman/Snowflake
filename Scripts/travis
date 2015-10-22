@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+if [ -z "$TRAVIS" ]; then
+    echo "TRAVIS must be set before this script will be run"
+    exit 1
+fi  
+
+curl -OlL "https://github.com/Carthage/Carthage/releases/download/0.9.3/Carthage.pkg"
+
+sudo installer -pkg "Carthage.pkg" -target /
+rm "Carthage.pkg"
+
+/usr/local/bin/carthage bootstrap --platform Mac --no-use-binaries

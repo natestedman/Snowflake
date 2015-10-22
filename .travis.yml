@@ -1,0 +1,12 @@
+language: objective-c
+xcode_project: Snowflake.xcodeproj
+xcode_scheme: Snowflake-OSX
+osx_image: xcode7.1
+before_install: true
+install: true
+git:
+  submodules: false
+script:
+  - BUILD_TOOL=xctool Scripts/travis
+  - xctool -project Snowflake.xcodeproj -scheme Snowflake-OSX
+  - xcodebuild test -project Snowflake.xcodeproj -scheme Snowflake-OSX
