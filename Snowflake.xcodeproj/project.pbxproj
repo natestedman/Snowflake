@@ -54,7 +54,7 @@
 		434478411BD85C7600533525 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
 		434478431BD85C7600533525 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
 		434478491BD85D0800533525 /* DeinitCallbackProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeinitCallbackProperty.swift; sourceTree = "<group>"; };
-		4344784F1BD85E0F00533525 /* SnowflakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnowflakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4344784F1BD85E0F00533525 /* SnowflakeTests-OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SnowflakeTests-OSX.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		434478511BD85E0F00533525 /* DeinitCallbackPropertyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeinitCallbackPropertyTests.swift; sourceTree = "<group>"; };
 		434478531BD85E0F00533525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4344785F1BD8624E00533525 /* DeinitCallbackTableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeinitCallbackTableTests.swift; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				439973B31BD5C7BD0005CEBE /* Snowflake.framework */,
-				4344784F1BD85E0F00533525 /* SnowflakeTests.xctest */,
+				4344784F1BD85E0F00533525 /* SnowflakeTests-OSX.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,9 +169,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4344784E1BD85E0F00533525 /* SnowflakeTests */ = {
+		4344784E1BD85E0F00533525 /* SnowflakeTests-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 434478571BD85E1000533525 /* Build configuration list for PBXNativeTarget "SnowflakeTests" */;
+			buildConfigurationList = 434478571BD85E1000533525 /* Build configuration list for PBXNativeTarget "SnowflakeTests-OSX" */;
 			buildPhases = (
 				4344784B1BD85E0F00533525 /* Sources */,
 				4344784C1BD85E0F00533525 /* Frameworks */,
@@ -183,14 +183,14 @@
 			dependencies = (
 				434478561BD85E0F00533525 /* PBXTargetDependency */,
 			);
-			name = SnowflakeTests;
+			name = "SnowflakeTests-OSX";
 			productName = SnowflakeTests;
-			productReference = 4344784F1BD85E0F00533525 /* SnowflakeTests.xctest */;
+			productReference = 4344784F1BD85E0F00533525 /* SnowflakeTests-OSX.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		439973B21BD5C7BD0005CEBE /* Snowflake */ = {
+		439973B21BD5C7BD0005CEBE /* Snowflake-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 439973BB1BD5C7BD0005CEBE /* Build configuration list for PBXNativeTarget "Snowflake" */;
+			buildConfigurationList = 439973BB1BD5C7BD0005CEBE /* Build configuration list for PBXNativeTarget "Snowflake-OSX" */;
 			buildPhases = (
 				439973AE1BD5C7BD0005CEBE /* Sources */,
 				439973AF1BD5C7BD0005CEBE /* Frameworks */,
@@ -201,7 +201,7 @@
 			);
 			dependencies = (
 			);
-			name = Snowflake;
+			name = "Snowflake-OSX";
 			productName = Snowflake;
 			productReference = 439973B31BD5C7BD0005CEBE /* Snowflake.framework */;
 			productType = "com.apple.product-type.framework";
@@ -236,8 +236,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				439973B21BD5C7BD0005CEBE /* Snowflake */,
-				4344784E1BD85E0F00533525 /* SnowflakeTests */,
+				439973B21BD5C7BD0005CEBE /* Snowflake-OSX */,
+				4344784E1BD85E0F00533525 /* SnowflakeTests-OSX */,
 			);
 		};
 /* End PBXProject section */
@@ -288,7 +288,7 @@
 /* Begin PBXTargetDependency section */
 		434478561BD85E0F00533525 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 439973B21BD5C7BD0005CEBE /* Snowflake */;
+			target = 439973B21BD5C7BD0005CEBE /* Snowflake-OSX */;
 			targetProxy = 434478551BD85E0F00533525 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -426,7 +426,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Snowflake;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Snowflake;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -450,7 +450,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Snowflake;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Snowflake;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -458,7 +458,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		434478571BD85E1000533525 /* Build configuration list for PBXNativeTarget "SnowflakeTests" */ = {
+		434478571BD85E1000533525 /* Build configuration list for PBXNativeTarget "SnowflakeTests-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				434478581BD85E1000533525 /* Debug */,
@@ -475,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		439973BB1BD5C7BD0005CEBE /* Build configuration list for PBXNativeTarget "Snowflake" */ = {
+		439973BB1BD5C7BD0005CEBE /* Build configuration list for PBXNativeTarget "Snowflake-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				439973BC1BD5C7BD0005CEBE /* Debug */,
