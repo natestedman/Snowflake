@@ -20,6 +20,21 @@
 		434478641BD87EEC00533525 /* UniqueTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434478631BD87EEC00533525 /* UniqueTableTests.swift */; settings = {ASSET_TAGS = (); }; };
 		434478661BD885C100533525 /* HashableWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434478651BD885C100533525 /* HashableWrapper.swift */; settings = {ASSET_TAGS = (); }; };
 		434478681BD8863E00533525 /* HashableWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434478671BD8863E00533525 /* HashableWrapperTests.swift */; settings = {ASSET_TAGS = (); }; };
+		434478781BD8889200533525 /* Snowflake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4344786E1BD8889200533525 /* Snowflake.framework */; settings = {ASSET_TAGS = (); }; };
+		434478851BD888A400533525 /* Snowflake.h in Headers */ = {isa = PBXBuildFile; fileRef = 439973B61BD5C7BD0005CEBE /* Snowflake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		434478861BD888AB00533525 /* DeinitCallbackProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434478491BD85D0800533525 /* DeinitCallbackProperty.swift */; settings = {ASSET_TAGS = (); }; };
+		434478871BD888AB00533525 /* DeinitCallbackPropertyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973C01BD5C9600005CEBE /* DeinitCallbackPropertyTable.swift */; settings = {ASSET_TAGS = (); }; };
+		434478881BD888AB00533525 /* HashableWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434478651BD885C100533525 /* HashableWrapper.swift */; settings = {ASSET_TAGS = (); }; };
+		434478891BD888AB00533525 /* UniqueTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973BE1BD5C9210005CEBE /* UniqueTable.swift */; settings = {ASSET_TAGS = (); }; };
+		4344788A1BD888AB00533525 /* Unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973C21BD5D3B00005CEBE /* Unique.swift */; settings = {ASSET_TAGS = (); }; };
+		4344788B1BD888E500533525 /* DeinitCallbackPropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434478511BD85E0F00533525 /* DeinitCallbackPropertyTests.swift */; settings = {ASSET_TAGS = (); }; };
+		4344788C1BD888E500533525 /* DeinitCallbackTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4344785F1BD8624E00533525 /* DeinitCallbackTableTests.swift */; settings = {ASSET_TAGS = (); }; };
+		4344788D1BD888E500533525 /* HashableWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434478671BD8863E00533525 /* HashableWrapperTests.swift */; settings = {ASSET_TAGS = (); }; };
+		4344788E1BD888E500533525 /* UniqueTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434478631BD87EEC00533525 /* UniqueTableTests.swift */; settings = {ASSET_TAGS = (); }; };
+		434478941BD8899000533525 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434478901BD8897D00533525 /* ReactiveCocoa.framework */; };
+		434478951BD8899000533525 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434478921BD8897D00533525 /* Result.framework */; };
+		434478961BD8899800533525 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434478901BD8897D00533525 /* ReactiveCocoa.framework */; };
+		434478971BD8899800533525 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434478921BD8897D00533525 /* Result.framework */; };
 		439973B71BD5C7BD0005CEBE /* Snowflake.h in Headers */ = {isa = PBXBuildFile; fileRef = 439973B61BD5C7BD0005CEBE /* Snowflake.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		439973BF1BD5C9210005CEBE /* UniqueTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973BE1BD5C9210005CEBE /* UniqueTable.swift */; settings = {ASSET_TAGS = (); }; };
 		439973C11BD5C9600005CEBE /* DeinitCallbackPropertyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973C01BD5C9600005CEBE /* DeinitCallbackPropertyTable.swift */; settings = {ASSET_TAGS = (); }; };
@@ -32,6 +47,13 @@
 			containerPortal = 439973AA1BD5C7BD0005CEBE /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 439973B21BD5C7BD0005CEBE;
+			remoteInfo = Snowflake;
+		};
+		434478791BD8889200533525 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 439973AA1BD5C7BD0005CEBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4344786D1BD8889200533525;
 			remoteInfo = Snowflake;
 		};
 /* End PBXContainerItemProxy section */
@@ -61,6 +83,10 @@
 		434478631BD87EEC00533525 /* UniqueTableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniqueTableTests.swift; sourceTree = "<group>"; };
 		434478651BD885C100533525 /* HashableWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashableWrapper.swift; sourceTree = "<group>"; };
 		434478671BD8863E00533525 /* HashableWrapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashableWrapperTests.swift; sourceTree = "<group>"; };
+		4344786E1BD8889200533525 /* Snowflake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Snowflake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		434478771BD8889200533525 /* SnowflakeTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SnowflakeTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		434478901BD8897D00533525 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
+		434478921BD8897D00533525 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
 		439973B31BD5C7BD0005CEBE /* Snowflake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Snowflake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		439973B61BD5C7BD0005CEBE /* Snowflake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Snowflake.h; sourceTree = "<group>"; };
 		439973B81BD5C7BD0005CEBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +106,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4344786A1BD8889200533525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				434478941BD8899000533525 /* ReactiveCocoa.framework in Frameworks */,
+				434478951BD8899000533525 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		434478741BD8889200533525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				434478781BD8889200533525 /* Snowflake.framework in Frameworks */,
+				434478961BD8899800533525 /* ReactiveCocoa.framework in Frameworks */,
+				434478971BD8899800533525 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		439973AF1BD5C7BD0005CEBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,6 +140,7 @@
 		4344783F1BD85C7600533525 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4344788F1BD8897D00533525 /* iOS */,
 				434478401BD85C7600533525 /* Mac */,
 			);
 			name = Frameworks;
@@ -122,6 +168,15 @@
 			path = SnowflakeTests;
 			sourceTree = "<group>";
 		};
+		4344788F1BD8897D00533525 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				434478901BD8897D00533525 /* ReactiveCocoa.framework */,
+				434478921BD8897D00533525 /* Result.framework */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 		439973A91BD5C7BD0005CEBE = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +192,8 @@
 			children = (
 				439973B31BD5C7BD0005CEBE /* Snowflake.framework */,
 				4344784F1BD85E0F00533525 /* SnowflakeTests-OSX.xctest */,
+				4344786E1BD8889200533525 /* Snowflake.framework */,
+				434478771BD8889200533525 /* SnowflakeTests-iOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +215,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4344786B1BD8889200533525 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				434478851BD888A400533525 /* Snowflake.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		439973B01BD5C7BD0005CEBE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,6 +251,43 @@
 			name = "SnowflakeTests-OSX";
 			productName = SnowflakeTests;
 			productReference = 4344784F1BD85E0F00533525 /* SnowflakeTests-OSX.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4344786D1BD8889200533525 /* Snowflake-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4344787F1BD8889200533525 /* Build configuration list for PBXNativeTarget "Snowflake-iOS" */;
+			buildPhases = (
+				434478691BD8889200533525 /* Sources */,
+				4344786A1BD8889200533525 /* Frameworks */,
+				4344786B1BD8889200533525 /* Headers */,
+				4344786C1BD8889200533525 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Snowflake-iOS";
+			productName = Snowflake;
+			productReference = 4344786E1BD8889200533525 /* Snowflake.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		434478761BD8889200533525 /* SnowflakeTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 434478821BD8889200533525 /* Build configuration list for PBXNativeTarget "SnowflakeTests-iOS" */;
+			buildPhases = (
+				434478731BD8889200533525 /* Sources */,
+				434478741BD8889200533525 /* Frameworks */,
+				434478751BD8889200533525 /* Resources */,
+				434478991BD889A100533525 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4344787A1BD8889200533525 /* PBXTargetDependency */,
+			);
+			name = "SnowflakeTests-iOS";
+			productName = SnowflakeTests;
+			productReference = 434478771BD8889200533525 /* SnowflakeTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		439973B21BD5C7BD0005CEBE /* Snowflake-OSX */ = {
@@ -219,6 +321,12 @@
 					4344784E1BD85E0F00533525 = {
 						CreatedOnToolsVersion = 7.0;
 					};
+					4344786D1BD8889200533525 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					434478761BD8889200533525 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					439973B21BD5C7BD0005CEBE = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -238,12 +346,28 @@
 			targets = (
 				439973B21BD5C7BD0005CEBE /* Snowflake-OSX */,
 				4344784E1BD85E0F00533525 /* SnowflakeTests-OSX */,
+				4344786D1BD8889200533525 /* Snowflake-iOS */,
+				434478761BD8889200533525 /* SnowflakeTests-iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4344784D1BD85E0F00533525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4344786C1BD8889200533525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		434478751BD8889200533525 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,6 +383,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		434478991BD889A100533525 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4344784B1BD85E0F00533525 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -268,6 +410,29 @@
 				434478681BD8863E00533525 /* HashableWrapperTests.swift in Sources */,
 				434478601BD8624E00533525 /* DeinitCallbackTableTests.swift in Sources */,
 				434478641BD87EEC00533525 /* UniqueTableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		434478691BD8889200533525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				434478881BD888AB00533525 /* HashableWrapper.swift in Sources */,
+				434478861BD888AB00533525 /* DeinitCallbackProperty.swift in Sources */,
+				4344788A1BD888AB00533525 /* Unique.swift in Sources */,
+				434478871BD888AB00533525 /* DeinitCallbackPropertyTable.swift in Sources */,
+				434478891BD888AB00533525 /* UniqueTable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		434478731BD8889200533525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4344788C1BD888E500533525 /* DeinitCallbackTableTests.swift in Sources */,
+				4344788B1BD888E500533525 /* DeinitCallbackPropertyTests.swift in Sources */,
+				4344788D1BD888E500533525 /* HashableWrapperTests.swift in Sources */,
+				4344788E1BD888E500533525 /* UniqueTableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +455,11 @@
 			isa = PBXTargetDependency;
 			target = 439973B21BD5C7BD0005CEBE /* Snowflake-OSX */;
 			targetProxy = 434478551BD85E0F00533525 /* PBXContainerItemProxy */;
+		};
+		4344787A1BD8889200533525 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4344786D1BD8889200533525 /* Snowflake-iOS */;
+			targetProxy = 434478791BD8889200533525 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -321,6 +491,90 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.SnowflakeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		434478801BD8889200533525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Snowflake/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Snowflake;
+				PRODUCT_NAME = Snowflake;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		434478811BD8889200533525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Snowflake/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Snowflake;
+				PRODUCT_NAME = Snowflake;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		434478831BD8889200533525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SnowflakeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.SnowflakeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		434478841BD8889200533525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SnowflakeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.SnowflakeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -463,6 +717,22 @@
 			buildConfigurations = (
 				434478581BD85E1000533525 /* Debug */,
 				434478591BD85E1000533525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4344787F1BD8889200533525 /* Build configuration list for PBXNativeTarget "Snowflake-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				434478801BD8889200533525 /* Debug */,
+				434478811BD8889200533525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		434478821BD8889200533525 /* Build configuration list for PBXNativeTarget "SnowflakeTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				434478831BD8889200533525 /* Debug */,
+				434478841BD8889200533525 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
