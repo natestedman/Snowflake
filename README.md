@@ -1,5 +1,7 @@
 # Snowflake
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![GitHub license](https://img.shields.io/github/license/natestedman/Snowflake.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![GitHub license](https://img.shields.io/github/license/natestedman/Snowflake.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![Travis](https://img.shields.io/travis/natestedman/Snowflake.svg)](https://travis-ci.org/natestedman/Snowflake)
 
 
 ## Installation
