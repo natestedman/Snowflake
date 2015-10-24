@@ -34,7 +34,7 @@ class DeinitCallbackPropertyTableTests: XCTestCase
         
         // test that bound properties are not released
         var RACProperty: MutableProperty<Int?>? = MutableProperty(0)
-        RACProperty! <~ table.propertyForKey(0, value: 0, replacing: false)
+        RACProperty! <~ table.propertyForKey(0, value: 0, replacing: false).producer
         XCTAssertEqual(table.table.count, 1)
         
         RACProperty = nil
