@@ -16,7 +16,7 @@
 		4344785C1BD85E3100533525 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 434478431BD85C7600533525 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4344785D1BD85EA600533525 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434478411BD85C7600533525 /* ReactiveCocoa.framework */; };
 		4344785E1BD85EA600533525 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434478431BD85C7600533525 /* Result.framework */; };
-		434478601BD8624E00533525 /* DeinitCallbackTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4344785F1BD8624E00533525 /* DeinitCallbackTableTests.swift */; settings = {ASSET_TAGS = (); }; };
+		434478601BD8624E00533525 /* DeinitCallbackPropertyTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4344785F1BD8624E00533525 /* DeinitCallbackPropertyTableTests.swift */; settings = {ASSET_TAGS = (); }; };
 		434478641BD87EEC00533525 /* UniqueTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434478631BD87EEC00533525 /* UniqueTableTests.swift */; settings = {ASSET_TAGS = (); }; };
 		434478661BD885C100533525 /* HashableWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434478651BD885C100533525 /* HashableWrapper.swift */; settings = {ASSET_TAGS = (); }; };
 		434478681BD8863E00533525 /* HashableWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434478671BD8863E00533525 /* HashableWrapperTests.swift */; settings = {ASSET_TAGS = (); }; };
@@ -28,7 +28,7 @@
 		434478891BD888AB00533525 /* UniqueTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973BE1BD5C9210005CEBE /* UniqueTable.swift */; settings = {ASSET_TAGS = (); }; };
 		4344788A1BD888AB00533525 /* Unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973C21BD5D3B00005CEBE /* Unique.swift */; settings = {ASSET_TAGS = (); }; };
 		4344788B1BD888E500533525 /* DeinitCallbackPropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434478511BD85E0F00533525 /* DeinitCallbackPropertyTests.swift */; settings = {ASSET_TAGS = (); }; };
-		4344788C1BD888E500533525 /* DeinitCallbackTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4344785F1BD8624E00533525 /* DeinitCallbackTableTests.swift */; settings = {ASSET_TAGS = (); }; };
+		4344788C1BD888E500533525 /* DeinitCallbackPropertyTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4344785F1BD8624E00533525 /* DeinitCallbackPropertyTableTests.swift */; settings = {ASSET_TAGS = (); }; };
 		4344788D1BD888E500533525 /* HashableWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434478671BD8863E00533525 /* HashableWrapperTests.swift */; settings = {ASSET_TAGS = (); }; };
 		4344788E1BD888E500533525 /* UniqueTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434478631BD87EEC00533525 /* UniqueTableTests.swift */; settings = {ASSET_TAGS = (); }; };
 		434478941BD8899000533525 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434478901BD8897D00533525 /* ReactiveCocoa.framework */; };
@@ -79,7 +79,7 @@
 		4344784F1BD85E0F00533525 /* SnowflakeTests-OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SnowflakeTests-OSX.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		434478511BD85E0F00533525 /* DeinitCallbackPropertyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeinitCallbackPropertyTests.swift; sourceTree = "<group>"; };
 		434478531BD85E0F00533525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4344785F1BD8624E00533525 /* DeinitCallbackTableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeinitCallbackTableTests.swift; sourceTree = "<group>"; };
+		4344785F1BD8624E00533525 /* DeinitCallbackPropertyTableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeinitCallbackPropertyTableTests.swift; sourceTree = "<group>"; };
 		434478631BD87EEC00533525 /* UniqueTableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniqueTableTests.swift; sourceTree = "<group>"; };
 		434478651BD885C100533525 /* HashableWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashableWrapper.swift; sourceTree = "<group>"; };
 		434478671BD8863E00533525 /* HashableWrapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashableWrapperTests.swift; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				434478511BD85E0F00533525 /* DeinitCallbackPropertyTests.swift */,
-				4344785F1BD8624E00533525 /* DeinitCallbackTableTests.swift */,
+				4344785F1BD8624E00533525 /* DeinitCallbackPropertyTableTests.swift */,
 				434478671BD8863E00533525 /* HashableWrapperTests.swift */,
 				434478631BD87EEC00533525 /* UniqueTableTests.swift */,
 				434478531BD85E0F00533525 /* Info.plist */,
@@ -408,7 +408,7 @@
 			files = (
 				434478521BD85E0F00533525 /* DeinitCallbackPropertyTests.swift in Sources */,
 				434478681BD8863E00533525 /* HashableWrapperTests.swift in Sources */,
-				434478601BD8624E00533525 /* DeinitCallbackTableTests.swift in Sources */,
+				434478601BD8624E00533525 /* DeinitCallbackPropertyTableTests.swift in Sources */,
 				434478641BD87EEC00533525 /* UniqueTableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,7 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4344788C1BD888E500533525 /* DeinitCallbackTableTests.swift in Sources */,
+				4344788C1BD888E500533525 /* DeinitCallbackPropertyTableTests.swift in Sources */,
 				4344788B1BD888E500533525 /* DeinitCallbackPropertyTests.swift in Sources */,
 				4344788D1BD888E500533525 /* HashableWrapperTests.swift in Sources */,
 				4344788E1BD888E500533525 /* UniqueTableTests.swift in Sources */,
