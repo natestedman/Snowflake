@@ -8,4 +8,4 @@ Add:
 
     github "natestedman/Snowflake"
 
-To your `Cartfile`. Snowflake depends on [ReactiveCocoa](https://github.com/reactivecocoa/reactivecocoa) 4, which is currently under development. Until a future release of ReactiveCocoa, Snowflake's `Cartfile` currently requires the [swift2](https://github.com/reactivecocoa/reactivecocoa/tree/swift2) branch.
+To your `Cartfile`. Snowflake depends on [ReactiveCocoa](https://github.com/reactivecocoa/reactivecocoa) 4, which is currently under development.
