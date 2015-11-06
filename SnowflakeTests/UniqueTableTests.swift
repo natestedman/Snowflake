@@ -40,12 +40,18 @@ class UniqueTableTests: XCTestCase
         // change value
         table.updateValue(TestModel(identifier: 0, value: 0))
         XCTAssertEqual(property.value?.value, 0)
+        XCTAssertEqual(table[0]?.value, 0)
         
         table.updateValue(TestModel(identifier: 0, value: 1))
         XCTAssertEqual(property.value?.value, 1)
+        XCTAssertEqual(table[0]?.value, 1)
         
         // don't change value
         table.updateValue(TestModel(identifier: 1, value: 2))
         XCTAssertEqual(property.value?.value, 1)
+        XCTAssertEqual(table[0]?.value, 1)
+        
+        // should not have been stored, since we didn't reference a producer
+        XCTAssertEqual(table[1]?.value, nil)
     }
 }

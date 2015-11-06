@@ -39,6 +39,21 @@ public class UniqueTable<Key: Hashable, Value>
     {
         table.setValue(value, forKey: key)
     }
+    
+    // MARK: - Retrieving Values
+    
+    /**
+    Returns the current value for a key, if any.
+    
+    - parameter key: The key.
+    */
+    public subscript(key: Key) -> Value?
+    {
+        get
+        {
+            return table.propertyForKey(key)?.value
+        }
+    }
 
     // MARK: - Producers
     

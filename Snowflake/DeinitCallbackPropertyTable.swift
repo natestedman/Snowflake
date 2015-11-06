@@ -24,6 +24,11 @@ internal class DeinitCallbackPropertyTable<Key: Hashable, Value>
     /// A weak table to hold properties as long as they are retained elsewhere.
     let table = NSMapTable(keyOptions: .ObjectPersonality, valueOptions: .WeakMemory)
     
+    func propertyForKey(key: Key) -> DeinitCallbackProperty<Value?>?
+    {
+        return table.objectForKey(HashableWrapper(wrapped: key)) as? DeinitCallbackProperty<Value?>
+    }
+    
     /**
     Returns the `DeinitCallbackProperty` for a key, or creates it if necessary.
     
