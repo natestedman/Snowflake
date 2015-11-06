@@ -34,7 +34,7 @@ class UniqueTableTests: XCTestCase
         
         // bind property to unique table
         let property = MutableProperty(TestModel?.None)
-        property <~ table.producerForKey(0)
+        property <~ table.optionalProducerForKey(0)
         XCTAssertEqual(property.value?.value, nil)
         
         // change value
