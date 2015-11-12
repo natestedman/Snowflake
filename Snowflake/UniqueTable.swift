@@ -25,7 +25,7 @@ public class UniqueTable<Key: Hashable, Value>
     }
     
     /// The unique table.
-    let table: DeinitCallbackPropertyTable<Key, Value>
+    private let table: DeinitCallbackPropertyTable<Key, Value>
     
     // MARK: - Updating Values
     
