@@ -31,7 +31,7 @@ internal class DeinitCallbackProperty<Value>
     }
     
     /// The callback to execute when this object deinits.
-    let callback: () -> ()
+    private let callback: () -> ()
     
     /// The backing property for this property.
     private let backing: MutableProperty<Value>
