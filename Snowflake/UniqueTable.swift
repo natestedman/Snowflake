@@ -10,14 +10,17 @@
 
 import ReactiveCocoa
 
+/// A table of unique values, identified by a `Hashable` key, and observable with ReactiveCocoa.
 public final class UniqueTable<Key: Hashable, Value>
 {
+    // MARK: - Initialization
+    
     /**
     Initializes a unique table.
     
     - parameter withCache: If `true`, unique values will be cached with `NSCache`. If `false`, they will be removed once
                            there are no strong references to a signal producer for the value's key. If this parameter
-                           is omitted, values will not be used.
+                           is omitted, values will not be cached.
     */
     public init(withCache: Bool = false)
     {
@@ -107,9 +110,10 @@ extension UniqueTable
     }
 }
 
-// MARK: - Unique
 public extension UniqueTable where Key == Value.UniqueKey, Value: Unique
 {
+    // MARK: - Unique
+    
     /**
     Updates a unique value's unique key.
     
