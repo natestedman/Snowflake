@@ -58,28 +58,34 @@ public class UniqueTable<Key: Hashable, Value>
     // MARK: - Producers
     
     /**
-    Returns a signal producer for the specified key, initializing the unique value if necessary.
+    Returns a property for the specified key, initializing the unique value if necessary.
     
-    - parameter key:          The key to return a signal producer for.
+    - parameter key:          The key to return a producer for.
     - parameter initialValue: The initial value. This parameter only applies to unique values that have not already been
                               initialized - if a value already exists, it will not be overwritten.
     */
     @warn_unused_result
-    public func producerForKey(key: Key, initialValue: Value) -> SignalProducer<Value, NoError>
+    public func propertyForKey(key: Key, initialValue: Value) -> AnyProperty<Value>
     {
-        return table.propertyForKey(key, value: initialValue, replacing: false).producer.ignoreNil()
+        return AnyProperty(
+            initialValue: initialValue,
+            producer: table.propertyForKey(key, value: initialValue, replacing: false).producer.ignoreNil()
+        )
     }
     
     /**
-    Returns a signal producer for the specified key, after updating with the specified value.
+    Returns a property for the specified key, after updating with the specified value.
     
-    - parameter key:          The key to return a signal producer for.
+    - parameter key:          The key to return a property for.
     - parameter updatedValue: The updated value.
     */
     @warn_unused_result
-    public func producerForKey(key: Key, updatedValue: Value) -> SignalProducer<Value, NoError>
+    public func propertyForKey(key: Key, updatedValue: Value) -> AnyProperty<Value>
     {
-        return table.propertyForKey(key, value: updatedValue, replacing: true).producer.ignoreNil()
+        return AnyProperty(
+            initialValue: updatedValue,
+            producer: table.propertyForKey(key, value: updatedValue, replacing: true).producer.ignoreNil()
+        )
     }
     
     /**
@@ -114,8 +120,8 @@ public extension UniqueTable where Key == Value.UniqueKey, Value: Unique
     - parameter value: The new unique value.
     */
     @warn_unused_result
-    public func producerForUpdatedValue(value: Value) -> SignalProducer<Value, NoError>
+    public func propertyForUpdatedValue(value: Value) -> AnyProperty<Value>
     {
-        return producerForKey(value.uniqueKey, initialValue: value)
+        return propertyForKey(value.uniqueKey, updatedValue: value)
     }
 }
