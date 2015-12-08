@@ -26,7 +26,10 @@ public class UniqueTable<Key: Hashable, Value>
     
     /// The unique table.
     private let table: DeinitCallbackPropertyTable<Key, Value>
-    
+}
+
+extension UniqueTable
+{
     // MARK: - Updating Values
     
     /**
@@ -54,7 +57,10 @@ public class UniqueTable<Key: Hashable, Value>
             return table.propertyForKey(key)?.value
         }
     }
+}
 
+extension UniqueTable
+{
     // MARK: - Producers
     
     /**
