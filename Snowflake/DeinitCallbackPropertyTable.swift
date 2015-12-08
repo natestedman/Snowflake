@@ -12,7 +12,7 @@ import Foundation
 import ReactiveCocoa
 
 /// A weakly referencing table of `DeinitCallbackProperty` objects.
-internal class DeinitCallbackPropertyTable<Key: Hashable, Value>
+internal final class DeinitCallbackPropertyTable<Key: Hashable, Value>
 {
     let cache: NSCache?
     

@@ -10,7 +10,7 @@
 
 import ReactiveCocoa
 
-public class UniqueTable<Key: Hashable, Value>
+public final class UniqueTable<Key: Hashable, Value>
 {
     /**
     Initializes a unique table.

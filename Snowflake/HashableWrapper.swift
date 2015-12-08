@@ -11,7 +11,7 @@
 import Foundation
 
 /// Wraps a `Hashable` value in an Objective-C object.
-internal class HashableWrapper<Wrapped: Hashable>: NSObject
+internal final class HashableWrapper<Wrapped: Hashable>: NSObject
 {
     /**
     Initializes a hashable wrapper.

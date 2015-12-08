@@ -11,7 +11,7 @@
 import ReactiveCocoa
 
 /// A property that executes a callback when it deinits.
-internal class DeinitCallbackProperty<Value>
+internal final class DeinitCallbackProperty<Value>
 {
     /**
     Initializes a `DeinitCallbackProperty`.
