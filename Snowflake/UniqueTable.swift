@@ -9,6 +9,7 @@
 // this software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
 
 import ReactiveCocoa
+import Result
 
 /// A table of unique values, identified by a `Hashable` key, and observable with ReactiveCocoa.
 public final class UniqueTable<Key: Hashable, Value>

@@ -9,6 +9,7 @@
 // this software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
 
 import ReactiveCocoa
+import Result
 
 /// A property that executes a callback when it deinits.
 internal final class DeinitCallbackProperty<Value>
@@ -53,7 +54,12 @@ internal final class DeinitCallbackProperty<Value>
     var producer: SignalProducer<Value, NoError>
     {
         // create a retain cycle, ensuring this property stays alive while anything is referencing its producer.
-        return backing.producer
-            .on(completed: { self })
+        return backing.producer.on(completed: { self })
+    }
+
+    /// A signal for the property's value.
+    var signal: Signal<Value, NoError>
+    {
+        return backing.signal.on(completed: { self })
     }
 }
